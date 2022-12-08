@@ -21,7 +21,7 @@ exit
 echo %DATE%
 set timestamp=%DATE:~5,2%%DATE:~8,2%%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%
 echo %timestamp%
-set target_name=%folder_exist%_keystore_windows_%timestamp%
+set target_name=%folder_exist%_keystore_%timestamp%
 
 echo "压缩%folder_exist%文件夹......"
 powershell Compress-Archive -Path %folder_exist% -DestinationPath %target_name%.zip
