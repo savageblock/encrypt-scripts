@@ -20,7 +20,7 @@ if [ ! -f "./$proj-public-key.gpg" ]; then
     exit 1
 fi
 
-target_name=${proj}_keystore_${time}
+target_name=${proj}-keystore_${time}
 
 echo "4. 压缩$proj文件夹......"
 tar czf ${target_name}.tar.gz $proj
