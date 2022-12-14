@@ -19,7 +19,7 @@ exit
 )
 
 echo %DATE%
-set timestamp=20%DATE:~5,2%%DATE:~8,2%%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%
+set timestamp=%DATE:~3,4%%DATE:~8,2%%DATE:~11,2%%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%
 echo %timestamp%
 set target_name=%folder_exist%_keystore_%timestamp%
 
